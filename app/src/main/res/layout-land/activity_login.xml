@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/login_background">
+
+    <!-- Header with Logo -->
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="324dp"
+            android:layout_height="83dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo_transparent" />
+
+    </LinearLayout>
+
+    <!-- Email EditText -->
+
+    <!-- Password EditText -->
+
+    <!-- Login Button -->
+
+    <!-- Create Account TextView -->
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_below="@id/layout_header"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:layout_below="@id/edit_text_email"
+        android:layout_marginTop="18dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_password"
+        android:layout_marginTop="19dp"
+        android:backgroundTint="#FFA000"
+        android:text="Login"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_create_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginTop="2dp"
+        android:text="Create a New Account"
+        android:textColor="@android:color/holo_blue_dark" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center">
+
+    <!-- Thank You Text -->
+    <TextView
+        android:id="@+id/text_thank_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank You for Your Order!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+    <!-- Back to Home Button -->
+    <Button
+        android:id="@+id/btn_back_to_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:layout_below="@id/text_thank_you"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FFA000"/>
+
+</RelativeLayout>

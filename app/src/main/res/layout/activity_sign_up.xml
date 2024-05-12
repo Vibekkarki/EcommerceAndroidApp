@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/login_background">
+
+    <!-- Header with Company Logo -->
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="32dp"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_transparent"
+            android:contentDescription="Logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up for an Account"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Email EditText -->
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"/>
+
+    <!-- Password EditText -->
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_email"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white"/>
+
+    <!-- Confirm Password EditText -->
+    <EditText
+        android:id="@+id/edit_text_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_password"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/white"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/white" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/btn_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_text_confirm_password"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sign Up"
+        android:textColor="@android:color/black"
+        android:backgroundTint="#FFA000"/>
+
+</RelativeLayout>

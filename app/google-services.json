@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1074888047920",
+    "project_id": "project2-44aeb",
+    "storage_bucket": "project2-44aeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074888047920:android:7ab7739fa0c336a6b35cf5",
+        "android_client_info": {
+          "package_name": "com.example.project2_ecommerce_bibek_karki"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZJiLlDtTXE_g_bStlIyEGBmunbtUZ40Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

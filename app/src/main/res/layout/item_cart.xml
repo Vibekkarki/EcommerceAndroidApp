@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/text_product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="4dp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_quantity"-->
+<!--        android:layout_width="123dp"-->
+<!--        android:layout_height="41dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="14sp" />-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <!-- Minus Button -->
+
+        <!-- Quantity EditText -->
+        <ImageButton
+            android:id="@+id/btn_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Minus"
+            android:src="@drawable/ic_minus" />
+
+        <EditText
+            android:id="@+id/edit_text_quantity"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/background_dark"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="1" />
+
+        <!-- Plus Button -->
+        <ImageButton
+            android:id="@+id/btn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Plus"
+            android:src="@drawable/ic_plus" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFA000"
+        android:textColor="@android:color/black"
+        android:text="Delete" />
+
+
+</LinearLayout>
